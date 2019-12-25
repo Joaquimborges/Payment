@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestor de pagamentos</title>
+    <style>
+        input#val {
+            width: 100px;
+        }
+        
+        body {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        div#res {
+            margin-top: 20px;
+        }
+        
+        .pagamento .pg {
+            width: 90px;
+            margin-top: 40px;
+        }
+        
+        .pagamento .qp {
+            margin-top: 12px;
+        }
+        
+        .pagamentoContainer {
+            border: 1px solid;
+            width: 30%;
+            margin: 0 auto;
+            background-color: beige;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="pagamentoContainer">
+
+        <h1>Gestor de pagamentos</h1>
+        <p>Quanto custa o produto?</p>
+
+        <section class="pagamento">
+
+            <div class="Parcelamento">
+                <input class="pg1" id="val" type="number" name="valor">
+                <button onclick="dinheiro()">Dinheiro</button>
+                <button onclick="cartao()">Cartão</button>
+                <div id="res">Resultado</div>
+            </div>
+
+            <input id="pg" class="pg" type="number">
+            <button onclick="confirma()">OK</button>
+            <div class="qp"> Quantidade de Parcelamento </div>
+
+
+
+
+
+        </section>
+
+    </section>
+
+
+
+</body>
+
+<script src="./main.js"></script>
+
+</html
